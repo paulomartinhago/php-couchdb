@@ -1,6 +1,10 @@
 {
     "name": "paulomartinhago/php-couchdb",
     "description": "PHP + CouchDB",
+    "license": "MIT",
+    "keywords": ["php", "couchdb", "martinhago", "emid"],
+    "minimum-stability": "alpha",
+    "type": "library",
     "authors": [
         {
             "name": "Paulo Martinhago",
