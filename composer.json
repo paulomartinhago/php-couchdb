@@ -1,0 +1,18 @@
+{
+    "name": "paulomartinhago/php-couchdb",
+    "description": "PHP + CouchDB",
+    "authors": [
+        {
+            "name": "Paulo Martinhago",
+            "email": "pmartinhago@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}
