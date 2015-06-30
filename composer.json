@@ -3,7 +3,7 @@
     "description": "PHP + CouchDB",
     "license": "MIT",
     "keywords": ["php", "couchdb", "martinhago", "emid"],
-    "minimum-stability": "alpha",
+    "minimum-stability": "dev",
     "type": "library",
     "authors": [
         {
