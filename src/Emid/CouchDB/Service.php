@@ -45,7 +45,9 @@ class Service
 
 	public function findDocument(Document $document)
 	{
-		if( empty($document->getId()) )
+		$id = $document->getId();
+
+		if( empty($id) )
 			$document->setId($document->getFields()['_id']);
 
 		$uri = sprintf('%s/%s', $this->client->getDatabase(), $document->getId()); 
@@ -63,7 +65,9 @@ class Service
 
 	public function saveDocument(Document $document)
 	{
-		if( empty($document->getId()) )
+		$id = $document->getId();
+
+		if( empty($id) )
 			$document->setId($document->getFields()['_id']);
 
 		$uri = sprintf('%s/%s', $this->client->getDatabase(), $document->getId());
@@ -86,7 +90,9 @@ class Service
 		$finfo       = finfo_open(FILEINFO_MIME_TYPE);
 		$contentType = finfo_file($finfo, $attachment);
 
-		if( empty($document->getId()) )
+		$id = $document->getId();
+
+		if( empty($id) )
 			$document->setId($document->getFields()['_id']);
 
 		$uri = sprintf('%s/%s/%s?rev=%s', $this->client->getDatabase(), $document->getId(), $basename, $document->getRevision());
